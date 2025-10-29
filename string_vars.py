@@ -46,3 +46,10 @@ ll_i = s_m2.find('lll')
 print(f'll_i={ll_i}')
 lines = s_m2.split('\n')
 print(f'lines={lines}')
+i = 0
+for line in lines:
+    i += 1
+    print(f'{i}: {line}')
+
+print('-------------')
+print(lines[2])
