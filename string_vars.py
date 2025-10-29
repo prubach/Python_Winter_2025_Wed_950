@@ -21,3 +21,14 @@ hello world it's Wednesday 29th October
 s_m1 = 'hello \t\tworld \nit\'s Wednesday \n29th \t\tOctober'
 print(s_m1)
 
+o_a = ord('a')
+print(f'o_a={o_a}')
+
+o_A = ord('A')
+print(f'o_A={o_A}')
+
+o_L = ord('ż')
+print(f'o_L={o_L}')
+
+c = chr(97)
+print(f'c={c}')
