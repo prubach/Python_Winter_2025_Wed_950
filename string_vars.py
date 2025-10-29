@@ -52,4 +52,5 @@ for line in lines:
     print(f'{i}: {line}')
 
 print('-------------')
-print(lines[2])
+print(lines[1])
+print('hhtejejewjwej')
