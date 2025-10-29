@@ -38,7 +38,7 @@ print('------------------')
 
 print('------------------')
 s_m2 = r'hello \t\tworld \nit\'s Wednesday \n29th \t\tOctober'
-s_m2 = 'hello \t\tworld \nit\'s Wednesday \\\n29th \October'
+s_m2 = 'hello \t\tworld \nit\'s Wednesday \n29th October'
 print(s_m2)
 
 ll_i = s_m2.find('lll')
@@ -52,8 +52,24 @@ for line in lines:
     print(f'{i}: {line}')
 
 print('-------------')
-print(lines[3])
+print(lines[2])
 print('------')
 
 print(lines[1])
 print('hhtejejewjwej')
+
+print('---------')
+print(lines)
+one_line = ' |||||| '.join(lines)
+print(one_line)
+
+print('---------')
+li = [34535, 64637, 437 ]
+print(li)
+print(li[0])
+print(li[1])
+
+sli = [ str(x) for x in li ]
+print(sli)
+print(' | '.join(sli))
+
