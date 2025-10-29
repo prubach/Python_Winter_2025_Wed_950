@@ -17,5 +17,15 @@ summ = 0
 while j < len(li):
     summ = summ + li[j]
     print(summ, end='\t')
-    j = j + 1
+    j = j + 1  # j += 1
 #print(summ)
+print('\n--------')
+
+j = 0
+while j < 10:
+    j += 1
+    if j % 2 == 0:
+        continue
+    if j >= 8:
+        break
+    print(j, end='\t')
