@@ -23,12 +23,15 @@ s1 = ' | '.join(l4)
 print(s1)
 
 l5 = s1.split('|')
-print(l5)
+print(f'l5={l5}')
 
 l6 = []
 for item in l5:
     l6.append(item.strip())  # strip() - cut off any whitespaces around
+print(f'l6={l6}')
 
+l7 = [ x.strip() for x in l5 if x.find('es') != -1 ]
+print(f'l7={l7}')
 #print(l1[1])
 #print(l3[1])
 #l3.append(10)
