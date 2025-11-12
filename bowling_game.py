@@ -31,9 +31,9 @@ def sum_bowls_loop(n):
 def sum_bowls_seq(n):
     return round((n*(n+1))/2)
 
-
-n = 10000000
-print(f'sum using sum_bowls_loop,    n={n}: {sum_bowls_loop(n)}')
-print(f'sum using sum_bowls_seq,     n={n}: {sum_bowls_seq(n)}')
-#print(f'sum using sum_bowls_recurs,  n={n}: {sum_bowls_recurs(n)}')
+if __name__ == '__main__':
+    n = 10000000
+    print(f'sum using sum_bowls_loop,    n={n}: {sum_bowls_loop(n)}')
+    print(f'sum using sum_bowls_seq,     n={n}: {sum_bowls_seq(n)}')
+    #print(f'sum using sum_bowls_recurs,  n={n}: {sum_bowls_recurs(n)}')
 
