@@ -8,6 +8,7 @@ def compute_folder_size(my_folder):
     os.path.isdir(my_folder) # if it is a directory
     os.path.isfile(my_folder) # if it is a regular file
     os.path.getsize(my_folder) # get the size of a file
+    os.listdir(my_folder) # get a list of files and folders in a folder
     return
 
 
