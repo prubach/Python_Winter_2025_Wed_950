@@ -51,3 +51,6 @@ a3 = bank.create_account(c2)
 print('--------------')
 print(bank)
 
+#TODO:
+# Add deposit and charge method to account - they should have a
+# parameter: amount
