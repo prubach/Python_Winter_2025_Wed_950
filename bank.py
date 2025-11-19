@@ -11,6 +11,8 @@ class Customer:
 
 class Account:
     last_id = 1000
+    yearly_interest_rate = 0.02  # TODO - will be used to update the interest rate
+
     def __init__(self, customer):
         self.customer = customer
         Account.last_id += 1
