@@ -18,6 +18,7 @@ class Account:
         self._balance = 0
 
     def deposit(self, amount):
+        #TODO - as part of the home assignment please extend this method
         if amount <= 0:
             print('Invalid amount.')
             raise InvalidAmountException(f'Invalid amount: {amount}')
@@ -25,6 +26,7 @@ class Account:
             self._balance += amount
 
     def charge(self, amount):
+        #TODO - as part of the home assignment please extend this method
         if amount > self._balance:
             print('Insufficient funds.')
             raise InsufficientFundsException(f'Insufficient funds: {amount}')
@@ -49,6 +51,16 @@ class Bank:
         a = Account(customer)
         self.account_list.append(a)
         return a
+
+    def transfer_money(self, from_account_id, to_account_id, amount):
+        # TODO - as part of the home assignment please implement this method - as names suggest the input parameters are
+        # ids of the accounts to transfer money from and to and amount to transfer. You may need a helper method to find
+        # those accounts based on their ids.
+        pass
+
+    def run_daily_interest_updater(self):
+        # TODO - as part of the home assignment please implement this method
+        pass
 
     def __repr__(self):
         return f'Bank[{self.name}: \n{self.customer_list}\n{self.account_list}]'
