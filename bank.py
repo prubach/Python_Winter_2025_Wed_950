@@ -10,7 +10,7 @@ class Customer:
         return f'Cust[{self.id}, {self.first_name}, {self.last_name}]'
 
 class Account:
-    last_id = 0
+    last_id = 1000
     def __init__(self, customer):
         self.customer = customer
         Account.last_id += 1
@@ -18,7 +18,7 @@ class Account:
         self._balance = 0
 
     def __repr__(self):
-        return f'Acc[{self.id}, {self.customer.last_name}, {self._balance}'
+        return f'Acc[{self.id}, {self.customer.last_name}, {self._balance}]'
 
 class Bank:
     def __init__(self, name):
