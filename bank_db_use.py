@@ -25,9 +25,12 @@ def add_data():
 
 
 def get_customers():
-    customers = db.query(Customer).filter(Customer.last_name=='Smith').all()
+    customers = db.query(Customer).filter(Customer.last_name=='Brown').all()
     for c in customers:
         print(c)
+        #accs = db.query(Account).filter(Account.customer == c).all()
+        #print(accs)
+        print(c.accounts)
 
 
 if __name__ == '__main__':
