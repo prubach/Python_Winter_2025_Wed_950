@@ -89,12 +89,14 @@ a1 = bank.create_account(c1)
 try:
     #a = 500
     #s = 'avcv' + a
-    a1.deposit(-500)
+    a1.deposit(500)
     a1.charge(300)
 except InsufficientFundsException as ife:
     print(ife)
 except InvalidAmountException as iae:
     print(iae)
+finally:
+    print('All done.')
 # except Exception as e:
 #     print(e)
 
