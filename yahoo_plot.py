@@ -109,6 +109,7 @@ def save_files(df):
 
 if __name__ == "__main__":
     df = get_crypto_volumes()
+    save_files(df)
     if df.empty:
         print("No data found — maybe the page structure changed.")
     else:

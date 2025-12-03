@@ -3,3 +3,5 @@ pandas
 beautifulsoup4
 plotly
 requests
+jupyter
+matplotlib
